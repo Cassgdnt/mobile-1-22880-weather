@@ -121,14 +121,14 @@ class CustomViewHolder(view: View, var data: CityWeather?=null) : RecyclerView.V
             Log.i(LOGCAT_CATEGORY,"Recycler view Item has been clicked")
             Log.i(LOGCAT_CATEGORY, "Dt is " + data?.main?.temp)
 
-            /*val intent = Intent(view.context, RecyclerDetail::class.java)
+            val intent = Intent(view.context, RecyclerDetail::class.java)
 
             intent.putExtra(DETAIL_TITLE_KEY,"Details on " + data?.name)
 
             intent.putExtra(Country_description, data?.weather?.get(0)?.description)
             intent.putExtra(Country_temp, data?.main?.temp.toString())
 
-            view.context.startActivity(intent)*/
+            view.context.startActivity(intent)
         }
 
     }

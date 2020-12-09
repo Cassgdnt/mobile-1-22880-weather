@@ -1,4 +1,4 @@
-/*package com.example.mobile_1_22880_weather
+package com.example.mobile_1_22880_weather
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -17,4 +17,4 @@ class RecyclerDetail : AppCompatActivity() {
         countryTempView.text = intent.getStringExtra(CustomViewHolder.Country_temp)
 
     }
-}*/
+}
