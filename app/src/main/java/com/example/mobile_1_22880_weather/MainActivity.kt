@@ -108,6 +108,8 @@ class CustomViewHolder(view: View, var data: CityWeather?=null) : RecyclerView.V
         val Country_temp = "Country_temp"
         val DETAIL_TITLE_KEY = "ActionBarTitle"
         val Country_description = "Country_description"
+        val Country = "Country"
+        val Country_feels_like= "Country_feels_like"
 
 
     }
@@ -124,6 +126,8 @@ class CustomViewHolder(view: View, var data: CityWeather?=null) : RecyclerView.V
 
             intent.putExtra(Country_description, data?.weather?.get(0)?.description)
             intent.putExtra(Country_temp, data?.main?.temp.toString())
+            intent.putExtra(Country, data?.sys?.country)
+            intent.putExtra(Country_feels_like, data?.main?.feels_like.toString())
 
             view.context.startActivity(intent)
         }
