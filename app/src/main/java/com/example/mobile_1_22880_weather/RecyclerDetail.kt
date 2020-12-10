@@ -14,7 +14,10 @@ class RecyclerDetail : AppCompatActivity() {
         supportActionBar?.title = title
 
         countryDescriptionView.text = intent.getStringExtra(CustomViewHolder.Country_description)
-        countryTempView.text = intent.getStringExtra(CustomViewHolder.Country_temp)
+        countryTempView.text ="The temperature is: "+ intent.getStringExtra(CustomViewHolder.Country_temp)
+        countryCountryView.text =intent.getStringExtra(CustomViewHolder.Country)
+        countryFeelsLikeView.text = "The feel like is: "+intent.getStringExtra(CustomViewHolder.Country_feels_like)
+
 
     }
 }
