@@ -12,7 +12,8 @@ package com.example.mobile_1_22880_weather
             val description: String
     )
      class Temperature(
-            val temp: Float
+            val temp: Float,
+            val feels_like:Float
     )
      class Country(
             val country: String
