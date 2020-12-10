@@ -106,9 +106,6 @@ class CustomViewHolder(view: View, var data: CityWeather?=null) : RecyclerView.V
     companion object {
         val LOGCAT_CATEGORY = "JSON"
         val Country_temp = "Country_temp"
-        /*val Country_feels_like = "Country_feels_like"
-        val Country_humidity = "Country_humidity"
-        val Country_pressure = "Country_pressur"*/
         val DETAIL_TITLE_KEY = "ActionBarTitle"
         val Country_description = "Country_description"
 
